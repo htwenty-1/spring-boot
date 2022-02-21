@@ -6,4 +6,10 @@
     <select id="allMember" resultType="com.example.sample02.dto.MemberDto">
         SELECT * FROM mysql.MEMBERS
     </select>
+
+    <insert id="addMember" parameterType="com.example.sample02.dto.MemberDto">
+        insert into mysql.MEMBERS(USER_ID, USER_PWD, USER_NAME, USER_EMAIL, AUTH)
+        values (#{id}, #{pwd}, #{name}, #{email}, #{auth})
+#         values (USER_ID = #{id}, USER_PWD = #{pwd}, USER_NAME = #{name}, USER_EMAIL = #{email}, AUTH = #{auth})
+    </insert>
 </mapper>

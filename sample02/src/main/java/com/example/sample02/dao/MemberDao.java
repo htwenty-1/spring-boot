@@ -12,4 +12,5 @@ public interface MemberDao {
 
     // mapper.xml의 id와 함수명이 일치해야함.
     List<MemberDto> allMember();
+    void addMember(MemberDto dto);
 }

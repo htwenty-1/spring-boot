@@ -23,8 +23,14 @@ public class Controller {
     @GetMapping("/dbTest")
     public List<MemberDto> dbTest() {
         System.out.println("Controller dbTest()");
-        List<MemberDto> list = service.allMember();
-        return list;
+        return service.allMember();
+    }
+
+    @GetMapping("/addMember")
+    public void addMember(MemberDto dto) {
+        System.out.println("Controller addMember()");
+        service.addMember(dto);
+        System.out.println("추가됨");
     }
 
 }

@@ -18,4 +18,8 @@ public class MemberService {
     public List<MemberDto> allMember() {
         return dao.allMember();
     }
+
+    public void addMember(MemberDto dto) {
+        dao.addMember(dto);
+    }
 }
