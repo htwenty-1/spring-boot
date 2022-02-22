@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hwangduil.springbootbackend.dao.MemberDao">
+
+    <select id="getId" parameterType="com.hwangduil.springbootbackend.dto.MemberDto" resultType="java.lang.Integer">
+        SELECT IFNULL(COUNT(*), 0) FROM MEMBERS
+        WHERE ID = #{id}
+    </select>
+
+    <insert id="addMember" parameterType="com.hwangduil.springbootbackend.dto.MemberDto">
+        INSERT INTO MEMBERS(ID, PWD, NAME, EMAIL, AUTH)
+        VALUES (#{id}, #{pwd}, #{name}, #{email}, 3)
+    </insert>
+
+    <select id="login" parameterType="com.hwangduil.springbootbackend.dto.MemberDto" resultType="com.hwangduil.springbootbackend.dto.MemberDto">
+        SELECT ID, NAME, EMAIL, AUTH FROM MEMBERS
+        WHERE ID = #{id} AND PWD = #{pwd}
+    </select>
+
+
+</mapper>

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>sample02</artifactId>
+    <artifactId>sample03</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sample02</name>
-    <description>sample02</description>
+    <name>sample03</name>
+    <description>sample03</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -32,8 +32,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.6.3</version>
-        </dependency>
+            <version>2.6.3</version> </dependency>
 
         <!-- spring boot tomcat -->
         <dependency>
@@ -46,8 +45,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.10.1</version>
-        </dependency>
+            <version>2.10.1</version> </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -75,13 +73,11 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.2.2</version>
         </dependency>
-
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
             <version>2.0.7</version>
         </dependency>
-
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -95,7 +91,7 @@
             <version>8.0.27</version>
         </dependency>
 
-        <!-- slf4j 로거 사용 설정 -->
+         <!-- slf4j 로거 사용 설정 -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -106,7 +102,6 @@
             <artifactId>logback-classic</artifactId>
             <version>1.2.10</version>
         </dependency>
-
     </dependencies>
 
     <build>

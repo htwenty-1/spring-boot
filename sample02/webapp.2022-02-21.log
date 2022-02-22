@@ -1,0 +1,163 @@
+2022-02-21 20:20:00.890 INFO  1007 --- [ main ] c.e.sample02.Sample02Application - Starting Sample02Application using Java 11.0.11 on hwangduils-MacBook-Pro.local with PID 12368 (/Users/hwangduil/spring-boot/sample02/target/classes started by hwangduil in /Users/hwangduil/spring-boot/sample02)
+2022-02-21 20:20:00.892 DEBUG 1009 --- [ main ] c.e.sample02.Sample02Application - Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-02-21 20:20:00.893 INFO  1010 --- [ main ] c.e.sample02.Sample02Application - No active profile set, falling back to default profiles: default
+2022-02-21 20:20:01.882 DEBUG 1999 --- [ main ] o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2022-02-21 20:20:01.883 DEBUG 2000 --- [ main ] o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.sample02'
+2022-02-21 20:20:02.119 DEBUG 2236 --- [ main ] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-02-21 20:20:02.131 DEBUG 2248 --- [ main ] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/hwangduil/spring-boot/sample02/target/classes/com/example/sample02/dao/MemberDao.class]
+2022-02-21 20:20:02.135 DEBUG 2252 --- [ main ] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberDao' and 'com.example.sample02.dao.MemberDao' mapperInterface
+2022-02-21 20:20:02.664 INFO  2781 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3000 (http)
+2022-02-21 20:20:02.672 INFO  2789 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-3000"]
+2022-02-21 20:20:02.673 INFO  2790 --- [ main ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-21 20:20:02.673 INFO  2790 --- [ main ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-21 20:20:02.745 INFO  2862 --- [ main ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-21 20:20:02.746 INFO  2863 --- [ main ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1764 ms
+2022-02-21 20:20:02.848 DEBUG 2965 --- [ main ] com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c13da15
+2022-02-21 20:20:02.860 DEBUG 2977 --- [ main ] com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2022-02-21 20:20:02.863 DEBUG 2980 --- [ main ] com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+2022-02-21 20:20:02.863 DEBUG 2980 --- [ main ] com.zaxxer.hikari.HikariConfig - autoCommit................................true
+2022-02-21 20:20:02.863 DEBUG 2980 --- [ main ] com.zaxxer.hikari.HikariConfig - catalog................................none
+2022-02-21 20:20:02.863 DEBUG 2980 --- [ main ] com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+2022-02-21 20:20:02.863 DEBUG 2980 --- [ main ] com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+2022-02-21 20:20:02.863 DEBUG 2980 --- [ main ] com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+2022-02-21 20:20:02.864 DEBUG 2981 --- [ main ] com.zaxxer.hikari.HikariConfig - dataSource................................none
+2022-02-21 20:20:02.864 DEBUG 2981 --- [ main ] com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+2022-02-21 20:20:02.864 DEBUG 2981 --- [ main ] com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+2022-02-21 20:20:02.864 DEBUG 2981 --- [ main ] com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=<masked>}
+2022-02-21 20:20:02.865 DEBUG 2982 --- [ main ] com.zaxxer.hikari.HikariConfig - driverClassName................................"com.mysql.cj.jdbc.Driver"
+2022-02-21 20:20:02.865 DEBUG 2982 --- [ main ] com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+2022-02-21 20:20:02.865 DEBUG 2982 --- [ main ] com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+2022-02-21 20:20:02.865 DEBUG 2982 --- [ main ] com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+2022-02-21 20:20:02.866 DEBUG 2983 --- [ main ] com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+2022-02-21 20:20:02.866 DEBUG 2983 --- [ main ] com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+2022-02-21 20:20:02.866 DEBUG 2983 --- [ main ] com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+2022-02-21 20:20:02.867 DEBUG 2984 --- [ main ] com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:mysql://localhost:3306/mysql
+2022-02-21 20:20:02.867 DEBUG 2984 --- [ main ] com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - minimumIdle................................10
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - password................................<masked>
+2022-02-21 20:20:02.868 DEBUG 2985 --- [ main ] com.zaxxer.hikari.HikariConfig - poolName................................"HikariPool-1"
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - readOnly................................false
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - schema................................none
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - username................................"root"
+2022-02-21 20:20:02.869 DEBUG 2986 --- [ main ] com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+2022-02-21 20:20:02.871 INFO  2988 --- [ main ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-21 20:20:03.393 DEBUG 3510 --- [ main ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a058be5
+2022-02-21 20:20:03.396 INFO  3513 --- [ main ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-21 20:20:03.414 DEBUG 3531 --- [ main ] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2022-02-21 20:20:03.501 DEBUG 3618 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-02-21 20:20:03.576 DEBUG 3693 --- [ main ] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/hwangduil/spring-boot/sample02/target/classes/mapper/Member.xml]'
+2022-02-21 20:20:03.580 DEBUG 3697 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43990649
+2022-02-21 20:20:03.637 DEBUG 3754 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a40c72
+2022-02-21 20:20:03.682 DEBUG 3799 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@628bf33d
+2022-02-21 20:20:03.720 DEBUG 3837 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e37da0c
+2022-02-21 20:20:03.759 DEBUG 3876 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66c56d1f
+2022-02-21 20:20:03.803 DEBUG 3920 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ffeb80c
+2022-02-21 20:20:03.857 DEBUG 3974 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2069f76a
+2022-02-21 20:20:03.895 DEBUG 4012 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c86da98
+2022-02-21 20:20:03.926 DEBUG 4043 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31f391b5
+2022-02-21 20:20:03.927 DEBUG 4044 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:20:04.008 DEBUG 4125 --- [ main ] _.s.w.s.HandlerMapping.Mappings - 
+	c.e.s.c.Controller:
+	{GET [/dbTest]}: dbTest()
+	{GET [/addMember]}: addMember(MemberDto)
+	{GET [/base]}: base()
+2022-02-21 20:20:04.021 DEBUG 4138 --- [ main ] _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2022-02-21 20:20:04.039 DEBUG 4156 --- [ main ] _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-02-21 20:20:04.054 DEBUG 4171 --- [ main ] _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-02-21 20:20:04.089 DEBUG 4206 --- [ main ] o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2022-02-21 20:20:04.309 INFO  4426 --- [ main ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-3000"]
+2022-02-21 20:20:04.329 INFO  4446 --- [ main ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 3000 (http) with context path ''
+2022-02-21 20:20:04.348 INFO  4465 --- [ main ] c.e.sample02.Sample02Application - Started Sample02Application in 3.998 seconds (JVM running for 5.671)
+2022-02-21 20:20:16.718 INFO  16835 --- [ http-nio-3000-exec-1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-21 20:20:16.719 INFO  16836 --- [ http-nio-3000-exec-1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-21 20:20:16.720 INFO  16837 --- [ http-nio-3000-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-02-21 20:20:16.746 INFO  16863 --- [ http-nio-3000-exec-1 ] c.e.sample02.controller.Controller - Controller getMember()
+2022-02-21 20:20:16.782 DEBUG 16899 --- [ http-nio-3000-exec-1 ] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2022-02-21 20:20:16.787 DEBUG 16904 --- [ http-nio-3000-exec-1 ] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56c9a3bd]
+2022-02-21 20:20:16.792 DEBUG 16909 --- [ http-nio-3000-exec-1 ] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@919880061 wrapping com.mysql.cj.jdbc.ConnectionImpl@5a058be5] will be managed by Spring
+2022-02-21 20:20:16.801 DEBUG 16918 --- [ http-nio-3000-exec-1 ] c.e.s.dao.MemberDao.allMember - ==>  Preparing: SELECT * FROM mysql.MEMBERS
+2022-02-21 20:20:16.829 DEBUG 16946 --- [ http-nio-3000-exec-1 ] c.e.s.dao.MemberDao.allMember - ==> Parameters: 
+2022-02-21 20:20:16.848 DEBUG 16965 --- [ http-nio-3000-exec-1 ] c.e.s.dao.MemberDao.allMember - <==      Total: 4
+2022-02-21 20:20:16.852 DEBUG 16969 --- [ http-nio-3000-exec-1 ] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56c9a3bd]
+2022-02-21 20:20:16.852 DEBUG 16969 --- [ http-nio-3000-exec-1 ] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56c9a3bd]
+2022-02-21 20:20:16.853 DEBUG 16970 --- [ http-nio-3000-exec-1 ] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56c9a3bd]
+2022-02-21 20:20:16.856 DEBUG 16973 --- [ http-nio-3000-exec-1 ] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56c9a3bd]
+2022-02-21 20:20:33.512 DEBUG 33629 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:20:33.517 DEBUG 33634 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:20:36.685 INFO  36802 --- [ http-nio-3000-exec-2 ] c.e.sample02.controller.Controller - Controller getMember()
+2022-02-21 20:20:36.691 DEBUG 36808 --- [ http-nio-3000-exec-2 ] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2022-02-21 20:20:36.692 DEBUG 36809 --- [ http-nio-3000-exec-2 ] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23735811]
+2022-02-21 20:20:36.693 DEBUG 36810 --- [ http-nio-3000-exec-2 ] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@696988513 wrapping com.mysql.cj.jdbc.ConnectionImpl@5a058be5] will be managed by Spring
+2022-02-21 20:20:36.694 DEBUG 36811 --- [ http-nio-3000-exec-2 ] c.e.s.dao.MemberDao.allMember - ==>  Preparing: SELECT * FROM mysql.MEMBERS
+2022-02-21 20:20:36.697 DEBUG 36814 --- [ http-nio-3000-exec-2 ] c.e.s.dao.MemberDao.allMember - ==> Parameters: 
+2022-02-21 20:20:36.704 DEBUG 36821 --- [ http-nio-3000-exec-2 ] c.e.s.dao.MemberDao.allMember - <==      Total: 4
+2022-02-21 20:20:36.705 DEBUG 36822 --- [ http-nio-3000-exec-2 ] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23735811]
+2022-02-21 20:20:36.706 DEBUG 36823 --- [ http-nio-3000-exec-2 ] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23735811]
+2022-02-21 20:20:36.706 DEBUG 36823 --- [ http-nio-3000-exec-2 ] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23735811]
+2022-02-21 20:20:36.706 DEBUG 36823 --- [ http-nio-3000-exec-2 ] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23735811]
+2022-02-21 20:21:03.519 DEBUG 63636 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:21:03.524 DEBUG 63641 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:21:33.530 DEBUG 93647 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:21:33.535 DEBUG 93652 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:22:03.537 DEBUG 123654 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:22:03.539 DEBUG 123656 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:22:33.543 DEBUG 153660 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:22:33.544 DEBUG 153661 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:23:03.548 DEBUG 183665 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:23:03.550 DEBUG 183667 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:23:33.554 DEBUG 213671 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:23:33.557 DEBUG 213674 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:24:03.562 DEBUG 243679 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:24:03.564 DEBUG 243681 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:24:33.566 DEBUG 273683 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:24:33.569 DEBUG 273686 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:25:03.577 DEBUG 303694 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:25:03.583 DEBUG 303700 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:25:33.590 DEBUG 333707 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:25:33.595 DEBUG 333712 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:26:03.599 DEBUG 363716 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:26:03.609 DEBUG 363726 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:26:33.611 DEBUG 393728 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:26:33.618 DEBUG 393735 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:27:03.623 DEBUG 423740 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:27:03.632 DEBUG 423749 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:27:33.637 DEBUG 453754 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:27:33.647 DEBUG 453764 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:28:03.651 DEBUG 483768 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:28:03.661 DEBUG 483778 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:28:33.668 DEBUG 513785 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:28:33.673 DEBUG 513790 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:29:03.678 DEBUG 543795 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:29:03.680 DEBUG 543797 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:29:33.684 DEBUG 573801 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:29:33.687 DEBUG 573804 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:30:03.688 DEBUG 603805 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:30:03.691 DEBUG 603808 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:30:33.691 DEBUG 633808 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:30:33.695 DEBUG 633812 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-02-21 20:30:52.058 INFO  652175 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-21 20:30:52.060 DEBUG 652177 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-02-21 20:30:52.063 DEBUG 652180 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5a058be5: (connection evicted)
+2022-02-21 20:30:52.069 DEBUG 652186 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@43990649: (connection evicted)
+2022-02-21 20:30:52.071 DEBUG 652188 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2a40c72: (connection evicted)
+2022-02-21 20:30:52.072 DEBUG 652189 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@628bf33d: (connection evicted)
+2022-02-21 20:30:52.073 DEBUG 652190 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6e37da0c: (connection evicted)
+2022-02-21 20:30:52.074 DEBUG 652191 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@66c56d1f: (connection evicted)
+2022-02-21 20:30:52.075 DEBUG 652192 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@ffeb80c: (connection evicted)
+2022-02-21 20:30:52.077 DEBUG 652194 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2069f76a: (connection evicted)
+2022-02-21 20:30:52.078 DEBUG 652195 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6c86da98: (connection evicted)
+2022-02-21 20:30:52.080 DEBUG 652197 --- [ HikariPool-1 connection closer ] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@31f391b5: (connection evicted)
+2022-02-21 20:30:52.082 DEBUG 652199 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-02-21 20:30:52.082 INFO  652199 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

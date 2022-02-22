@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <button type="button">클릭</button>
+
+    <table border="1" id="tab"></table>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button").click(function () {
+                // alert('click');
+
+                /*
+                $.ajax({
+                    url: "http://localhost:3000/base",
+                    type: "GET",
+                    success: function(data) {
+                        // alert("success");
+                        $("#demo").text(data);
+                    },
+                    error: function() {
+                        alert("error");
+                    }
+                });
+                */
+
+                /*
+                $.ajax({
+                    url: "http://localhost:3000/conParamGet",
+                    type: "GET",
+                    data: { title: "제목입니다." },
+                    success: function(data) {
+                        // alert('success');
+                        $("#demo").text(data);
+                    },
+                    error: function() {
+                        alert('error');
+                    }
+                });
+                */
+                
+                /*
+                $.ajax({
+                    url: "http://localhost:3000/getMember",
+                    type: "GET",
+                    success: function (json) {
+                        console.log(json);
+                        alert(JSON.stringify(json));
+
+                        $("#demo").append(json.id + "<br/>");
+                        $("#demo").append(json.pwd + "<br/>");
+                        $("#demo").append(json.name + "<br/>");
+                        $("#demo").append(json.email + "<br/>");
+                    },
+                    error: function() {
+                        alert('error');
+                    }
+                });
+                */
+
+                /*
+                $.ajax({
+                    url: "http://192.168.35.104:3000/getMemberList",
+                    type: "GET",
+                    data: { 
+                        id: 'system', 
+                        pwd: '34567',
+                        name: '시스템',
+                        email: 'admin@system.kr',
+                        auth: 1
+                    },
+                    success: function(json) {
+                        // alert("success");
+                        // alert(JSON.stringify(json));
+
+                        // alert(json.length);
+
+                        let str = "";
+                        for(let i = 0; i < json.length; i++) {
+                            str += "<tr>";
+                            str += `<td>${json[i].id}</td>`;
+                            str += `<td>${json[i].pwd}</td>`;
+                            str += `<td>${json[i].name}</td>`;
+                            str += `<td>${json[i].email}</td>`;
+                            str += `<td>${json[i].auth}</td>`;
+                            str += "</tr>";
+                        }
+
+                        $("#tab").append(str);
+                    },
+                    error: function() {
+                        alert("error");
+                    }
+                });
+                */
+
+                $.ajax({
+                    url: "http://192.168.35.104:3000/dbTest",
+                    type: "GET",
+                    success: function(json) {
+                        console.log("success");
+                        console.log(JSON.stringify(json));
+                        
+                        let str = ""
+                        json.forEach(e => {
+                            JSON.stringify(e);
+                            str += "<tr>";
+                            str += `<td>${e.id}</td>`
+                            str += `<td>${e.pwd}</td>`
+                            str += `<td>${e.name}</td>`
+                            str += `<td>${e.email}</td>`
+                            str += `<td>${e.auth}</td>`
+                            str += "</tr>"
+                        });
+                        $("#tab").append(str);
+                    },
+                    error: function() {
+                        console.log("error");
+                    },
+                })
+                
+            });
+        });
+    </script>
+    
+</body>
+</html>

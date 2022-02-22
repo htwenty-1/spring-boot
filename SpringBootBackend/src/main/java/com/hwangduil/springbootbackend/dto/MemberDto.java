@@ -1,4 +1,4 @@
-package com.example.sample02.dto;
+package com.hwangduil.springbootbackend.dto;
 
 import lombok.Getter;
 
@@ -19,6 +19,26 @@ public class MemberDto {
         this.pwd = pwd;
         this.name = name;
         this.email = email;
+        this.auth = auth;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setAuth(int auth) {
         this.auth = auth;
     }
 

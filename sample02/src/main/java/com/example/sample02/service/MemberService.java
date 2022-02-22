@@ -22,4 +22,5 @@ public class MemberService {
     public void addMember(MemberDto dto) {
         dao.addMember(dto);
     }
+
 }
