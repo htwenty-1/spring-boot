@@ -19,4 +19,8 @@ public class BbsService {
         return dao.getBbsList();
     }
 
+    public void insertBbs(BbsDto dto) {
+        dao.insertBbs(dto);
+    }
+
 }

@@ -11,5 +11,6 @@ import java.util.List;
 public interface BbsDao {
 
     List<BbsDto> getBbsList();
+    void insertBbs(BbsDto dto);
 
 }

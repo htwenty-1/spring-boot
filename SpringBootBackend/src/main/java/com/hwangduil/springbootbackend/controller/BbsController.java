@@ -24,4 +24,10 @@ public class BbsController {
         return service.getBbsList();
     }
 
+    @GetMapping("/insertBbs")
+    public void insertBbs(BbsDto dto) {
+        logger.info("BbsController insertBbs() " + new Date());
+        service.insertBbs(dto);
+    }
+
 }
