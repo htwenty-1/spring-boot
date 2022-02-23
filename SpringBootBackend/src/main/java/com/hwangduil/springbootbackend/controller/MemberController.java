@@ -50,5 +50,14 @@ public class MemberController {
         return service.login(dto);
     }
 
+    /*
+    @PostMapping("/login")
+    public MemberDto login(MemberDto dto, HttpServletRequest req) {
+        logger.info("MemberController login()");
+        MemberDto mem = service.login(dto);
+        req.getSession().setAttribute("login", mem);
+        return mem;
+    }
+    */
 }
 
