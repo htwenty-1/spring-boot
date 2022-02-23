@@ -16,7 +16,7 @@
             <thead>
                 <th>번호</th>
                 <th>제목</th>
-                <th>직성자</th>
+                <th>작성자</th>
                 <th>seq</th>
             </thead>
             <tbody>
@@ -46,7 +46,7 @@
                     $.each(list, function(index, item) {  // index = 배열의 index
                         let str = `<tr>
                                         <th>${index+1}</th>
-                                        <td>${item.title}</td>
+                                        <td><a href="board-detail.html?seq=${item.seq}">${item.title}</a></td>
                                         <td>${item.id}</td>
                                         <td>${item.seq}</td>
                                     </tr>`;

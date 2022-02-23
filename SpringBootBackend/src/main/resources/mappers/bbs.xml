@@ -14,9 +14,9 @@
         VALUES (NEXTVAL('SEQ_BBS'), #{id}, (SELECT IFNULL(MAX(REF)+1, 0) FROM BBS AS B),0, 0, #{title}, #{content}, SYSDATE(), 0, 0)
     </insert>
 
-    <select id="getBbsDetail" resultType="com.hwangduil.springbootbackend.dto.BbsDto">
+    <select id="getBbsDetail" parameterType="Integer" resultType="com.hwangduil.springbootbackend.dto.BbsDto">
         SELECT * FROM BBS
-        WHERE ID = #{id} AND TITLE = #{title}
+        WHERE SEQ = #{seq}
     </select>
 
 </mapper>

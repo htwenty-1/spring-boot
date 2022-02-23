@@ -23,4 +23,8 @@ public class BbsService {
         dao.insertBbs(dto);
     }
 
+    public BbsDto getBbsDetail(int seq) {
+        return dao.getBbsDetail(seq);
+    }
+
 }

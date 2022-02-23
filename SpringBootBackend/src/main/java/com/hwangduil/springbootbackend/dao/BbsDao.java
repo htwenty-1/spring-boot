@@ -12,5 +12,6 @@ public interface BbsDao {
 
     List<BbsDto> getBbsList();
     void insertBbs(BbsDto dto);
+    BbsDto getBbsDetail(int seq);
 
 }
