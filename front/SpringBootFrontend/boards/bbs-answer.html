@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>답글 작성</title>
+    <style>
+        h1 {
+            font-size: 25px;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>답글 작성</h1>
+
+        <table class="table">
+            <tr>
+                <td>제목</td>
+                <td>
+                    <input type="text" id="title" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td>작성자</td>
+                <td>
+                    <input type="text" id="writer" class="form-control" readonly />
+                </td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>
+                    <textarea name="" id="content" cols="100%" rows="10" class="form-control"></textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" id="insertBtn" class="btn btn-primary">작성</button>
+        </div>
+    </div>
+
+    <script>
+        
+        $(document).ready(function() {
+            let dataStr = sessionStorage.getItem("login");
+            let data = JSON.parse(dataStr);
+            console.log(data);
+
+            const url = new URL(location.href);
+            const urlParams = url.searchParams;
+            let seq = urlParams.get("seq");
+
+            console.log(seq);
+
+            $("#writer").val(data.id);
+            
+            $("#insertBtn").click(function() {
+                $.ajax({
+                    url: "http://localhost:3000/bbsAnswerUpdate",
+                    type: "GET",
+                    data: {
+                        seq: seq,
+                        title: $("#title").val(),
+                        id: $("#writer").val(),
+                        content: $("#content").val()
+                    },
+                    success: function(msg) {
+                        if(msg === "update") {
+                            alert("등록되었습니다.");
+                            location.href="boards.html";
+                        } else {
+                            alert("등록에 실패하였습니다");
+                        }
+                    },
+                    error: function() {
+                        alert("404 Error");
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>
