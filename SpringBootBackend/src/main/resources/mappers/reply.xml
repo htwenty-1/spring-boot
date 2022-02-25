@@ -3,8 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper>
-    <select id="getReply" parameterType="" resultType="">
-        
+<mapper namespace="com.hwangduil.springbootbackend.dao.ReplyDao">
+    <!-- 댓글 추가 -->
+    <insert id="insertReply" parameterType="com.hwangduil.springbootbackend.dto.ReplyDto">
+        INSERT INTO REPLY(SEQ, ID, CONTENT, WDATE, ORIGIN_SEQ)
+        VALUES ( NEXTVAL('SEQ_REPLY'), #{id}, #{content}, SYSDATE(), #{originSeq} )
+    </insert>
+
+    <!-- 댓글 뿌려주기 -->
+    <select id="getReply" parameterType="Integer" resultType="com.hwangduil.springbootbackend.dto.ReplyDto">
+        SELECT SEQ, ID, CONTENT, WDATE, ORIGIN_SEQ FROM REPLY
+        WHERE ORIGIN_SEQ = #{seq}
     </select>
+
 </mapper>

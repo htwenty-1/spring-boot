@@ -83,7 +83,6 @@
         WHERE RNUM BETWEEN #{start} AND #{end}
     </select>
 
-    <!-- 글의 총 개수 -->
     <select id="getBbsCount" parameterType="com.hwangduil.springbootbackend.dto.BbsParam" resultType="Integer">
         SELECT IFNULL(COUNT(*), 0) AS CNT FROM BBS
         WHERE 1 = 1
