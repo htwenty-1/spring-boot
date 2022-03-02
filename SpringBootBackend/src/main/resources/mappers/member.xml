@@ -5,6 +5,10 @@
 
 <mapper namespace="com.hwangduil.springbootbackend.dao.MemberDao">
 
+    <select id="allMember" resultType="com.hwangduil.springbootbackend.dto.MemberDto">
+        SELECT * FROM MEMBERS
+    </select>
+
     <select id="getId" parameterType="com.hwangduil.springbootbackend.dto.MemberDto" resultType="java.lang.Integer">
         SELECT IFNULL(COUNT(*), 0) FROM MEMBERS
         WHERE ID = #{id}

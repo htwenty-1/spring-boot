@@ -6,8 +6,12 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -50,6 +54,13 @@ public class MemberController {
         return service.login(dto);
     }
 
+    @PostMapping("/m.login")
+    public MemberDto loginM(@RequestBody MemberDto dto) {
+        logger.info("MemberController loginMobile()");
+        logger.info(service.login(dto).toString());
+        return service.login(dto);
+    }
+
     /*
     @PostMapping("/login")
     public MemberDto login(MemberDto dto, HttpServletRequest req) {
@@ -59,5 +70,11 @@ public class MemberController {
         return mem;
     }
     */
+
+    @GetMapping("/allMember")
+    public List<MemberDto> allMember() {
+        logger.info("MemberController allMember()");
+        return service.allMember();
+    }
 }
 

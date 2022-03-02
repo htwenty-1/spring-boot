@@ -6,8 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,10 +32,20 @@ public class Controller {
         return "link success";
     }
 
+/*
     @GetMapping("/getMember")
     public MemberDto getMember() {
         System.out.println("HelloController getMember()");
         MemberDto dto = new MemberDto("홍길동", "gildong123", "aaa", "aaa@naver.com", 1);
+
+        return dto;
+    }*/
+
+    @PostMapping("/getMember")
+    public MemberDto getMember(@RequestBody MemberDto mem) {
+        logger.info("HelloController getMember()");
+        MemberDto dto = new MemberDto("홍길동", "gildong123", "aaa", "aaa@naver.com", 1);
+        logger.info(mem.toString());
 
         return dto;
     }
@@ -55,11 +64,19 @@ public class Controller {
         return list;
     }
 
+    @PostMapping("/dbTest")
+    public List<MemberDto> dbTest() {
+        logger.info("Controller getMember()");
+        return service.allMember();
+    }
+
+    /*
     @GetMapping("/dbTest")
     public List<MemberDto> dbTest() {
         logger.info("Controller getMember()");
         return service.allMember();
     }
+    */
 
     @GetMapping("/addMember")
     public void addMember(MemberDto dto) {
